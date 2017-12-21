@@ -74,13 +74,7 @@ function loadDataTable() {
         "aaSorting": [[ 0, "asc" ]],
         "aoColumns": [
            {
-                "sWidth": "25%"
-                // "sType": "formatted-num" 
-            },{
-                "sWidth": "10%"
-                // "sType": "formatted-num" 
-            },{
-                "sWidth": "5%"
+                "sWidth": "20%"
                 // "sType": "formatted-num" 
             },{
                 "sWidth": "10%"
@@ -92,13 +86,22 @@ function loadDataTable() {
                 "sWidth": "10%"
                 // "sType": "formatted-num" 
             },{
-                "sWidth": "15%"
+                "sWidth": "10%"
+                // "sType": "formatted-num" 
+            },{
+                "sWidth": "6%"
+                // "sType": "formatted-num" 
+            },{
+                "sWidth": "6%"
+                // "sType": "formatted-num" 
+            },{
+                "sWidth": "6%"
                 // "sType": "formatted-num" 
             },{
                 "sWidth": "10%"
                 // "sType": "formatted-num" 
             },{
-                "sWidth": "5%"
+                "sWidth": "12%"
                 // "sType": "formatted-num" 
             }
         ],

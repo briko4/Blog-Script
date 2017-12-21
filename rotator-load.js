@@ -74,9 +74,6 @@ function loadDataTable() {
         "aaSorting": [[ 0, "asc" ]],
         "aoColumns": [
            {
-                "sWidth": "0%"
-                // "sType": "formatted-num" 
-            },{
                 "sWidth": "17%"
 				// nama 17
                 // "sType": "formatted-num" 

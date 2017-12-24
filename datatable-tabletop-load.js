@@ -74,8 +74,11 @@ function loadDataTable() {
         "aaSorting": [[ 0, "asc" ]],
         "aoColumns": [
            {
-                "sWidth": "20%"
-                // "sType": "formatted-num" 
+                "sWidth": "6%"
+                // "sType": "formatted-num"
+            },{
+                "sWidth": "14%"
+                // "sType": "formatted-num"  
             },{
                 "sWidth": "10%"
                 // "sType": "formatted-num" 

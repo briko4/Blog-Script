@@ -70,8 +70,9 @@ function loadDataTable() {
         "oLanguage": {
             "sLengthMenu": "_MENU_ records per page"
         },
-        "iDisplayLength": 25,
-        "aaSorting": [[ 0, "asc" ]],
+        "iDisplayLength": 10,
+        "aaSorting": [[ 1, "asc" ]],
+	"scrollX": true,    
         "aoColumns": [
            {
                 "sWidth": "6%"
@@ -90,15 +91,6 @@ function loadDataTable() {
                 // "sType": "formatted-num" 
             },{
                 "sWidth": "10%"
-                // "sType": "formatted-num" 
-            },{
-                "sWidth": "6%"
-                // "sType": "formatted-num" 
-            },{
-                "sWidth": "6%"
-                // "sType": "formatted-num" 
-            },{
-                "sWidth": "6%"
                 // "sType": "formatted-num" 
             },{
                 "sWidth": "10%"

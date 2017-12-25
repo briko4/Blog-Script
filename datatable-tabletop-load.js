@@ -76,7 +76,7 @@ function loadDataTable() {
         "aoColumns": [
            {
                 "sWidth": "6%",
-		"sOrder": "false"
+		"ordering": "false"
                 // "sType": "formatted-num"
             },{
                 "sWidth": "14%"
@@ -98,7 +98,7 @@ function loadDataTable() {
                 // "sType": "formatted-num" 
             },{
                 "sWidth": "12%",
-		"sOrder": "false"   
+		"ordering": "false"   
                 // "sType": "formatted-num" 
 		    
             }

@@ -87,7 +87,7 @@ function loadDataTable() {
         "initComplete": function(settings, json) {
             $('#searchable-table').show();
         }
-        "createdRow": function ( row, data, index ) {
+        "createdRow": function ( row, data, txt ) {
             if ( data[6] === "Not Paying" ) {
                 $('td', row).eq(6).addClass('scam');
             }

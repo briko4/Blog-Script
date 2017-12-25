@@ -75,9 +75,9 @@ function loadDataTable() {
 	"scrollX": true,    
         "aoColumns": [
            {
-                "sWidth": "6%"
+                "sWidth": "6%",
+		"orderable": "false"
                 // "sType": "formatted-num"
-		   "orderable": "false"
             },{
                 "sWidth": "14%"
                 // "sType": "formatted-num"  
@@ -97,9 +97,10 @@ function loadDataTable() {
                 "sWidth": "10%"
                 // "sType": "formatted-num" 
             },{
-                "sWidth": "12%"
-                // "sType": "formatted-num" 
+                "sWidth": "12%",
 		"orderable": "false"    
+                // "sType": "formatted-num" 
+		    
             }
         ],
         // Fix thead to top of page when scrolling past it

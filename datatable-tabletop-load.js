@@ -75,25 +75,25 @@ function loadDataTable() {
 	"scrollX": true,    
         "aoColumns": [
 	   {
-                "sWidth": "15%"
+                "sWidth": "14%"
                 // "sType": "formatted-num"  
             },{
                 "sWidth": "10%"
                 // "sType": "formatted-num" 
             },{
-                "sWidth": "10%"
+                "sWidth": "8%"
+                // "sType": "formatted-num" 
+            },{
+                "sWidth": "9%"
+                // "sType": "formatted-num" 
+            },{
+                "sWidth": "9%"
                 // "sType": "formatted-num" 
             },{
                 "sWidth": "10%"
                 // "sType": "formatted-num" 
             },{
-                "sWidth": "10%"
-                // "sType": "formatted-num" 
-            },{
-                "sWidth": "10%"
-                // "sType": "formatted-num" 
-            },{
-                "sWidth": "25%",
+                "sWidth": "30%",
 		"ordering": "false"   
                 // "sType": "formatted-num" 
 		    

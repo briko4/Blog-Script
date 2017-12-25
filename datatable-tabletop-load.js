@@ -66,39 +66,14 @@ jQuery.extend( jQuery.fn.dataTableExt.oSort, {
 function loadDataTable() {
     // Load Datatables after Tabletop is loaded
     $('#searchable-table').dataTable({
-        "bAutoWidth": false,
+        "bAutoWidth": true,
         "oLanguage": {
             "sLengthMenu": "view: _MENU_ "
         },
         "iDisplayLength": 10,
         "aaSorting": [[ 1, "asc" ]],
 	"scrollX": true,    
-        "aoColumns": [
-	   {
-                "sWidth": "14%"
-                // "sType": "formatted-num"  
-            },{
-                "sWidth": "10%"
-                // "sType": "formatted-num" 
-            },{
-                "sWidth": "8%"
-                // "sType": "formatted-num" 
-            },{
-                "sWidth": "9%"
-                // "sType": "formatted-num" 
-            },{
-                "sWidth": "9%"
-                // "sType": "formatted-num" 
-            },{
-                "sWidth": "10%"
-                // "sType": "formatted-num" 
-            },{
-                "sWidth": "30%",
-		"ordering": "false"   
-                // "sType": "formatted-num" 
-		    
-            }
-        ],
+
         // Fix thead to top of page when scrolling past it
         "initComplete": function(settings, json) {
             $('#searchable-table').show();

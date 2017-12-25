@@ -73,7 +73,16 @@ function loadDataTable() {
         "iDisplayLength": 10,
         "aaSorting": [[ 1, "asc" ]],
 	"scrollX": true,    
-
+        "aoColumns": [
+	   {"orderable": "false"},
+	   null,
+	   null,
+	   null,
+	   null,
+	   null,
+	   null,
+	  {"orderable": "false"}	
+        ],
         // Fix thead to top of page when scrolling past it
         "initComplete": function(settings, json) {
             $('#searchable-table').show();

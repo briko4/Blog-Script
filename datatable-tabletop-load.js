@@ -74,12 +74,8 @@ function loadDataTable() {
         "aaSorting": [[ 1, "asc" ]],
 	"scrollX": true,    
         "aoColumns": [
-           {
-                "sWidth": "6%",
-		"ordering": "false"
-                // "sType": "formatted-num"
-            },{
-                "sWidth": "14%"
+	   {
+                "sWidth": "18%"
                 // "sType": "formatted-num"  
             },{
                 "sWidth": "10%"
@@ -97,7 +93,7 @@ function loadDataTable() {
                 "sWidth": "10%"
                 // "sType": "formatted-num" 
             },{
-                "sWidth": "12%",
+                "sWidth": "14%",
 		"ordering": "false"   
                 // "sType": "formatted-num" 
 		    

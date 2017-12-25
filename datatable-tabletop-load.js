@@ -77,6 +77,7 @@ function loadDataTable() {
            {
                 "sWidth": "6%"
                 // "sType": "formatted-num"
+		   "orderable": "false"
             },{
                 "sWidth": "14%"
                 // "sType": "formatted-num"  
@@ -98,6 +99,7 @@ function loadDataTable() {
             },{
                 "sWidth": "12%"
                 // "sType": "formatted-num" 
+		"orderable": "false"    
             }
         ],
         // Fix thead to top of page when scrolling past it

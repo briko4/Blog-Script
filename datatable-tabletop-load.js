@@ -88,7 +88,7 @@ function loadDataTable() {
             $('#searchable-table').show();
         }
         "createdRow": function ( row, data, index ) {
-            if ( data[6] === 'Not Paying' ) {
+            if ( data[6] === "Not Paying" ) {
                 $('td', row).eq(6).addClass('scam');
             }
         }	    

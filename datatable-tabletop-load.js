@@ -73,7 +73,7 @@ function loadDataTable() {
         "iDisplayLength": 10,
         "aaSorting": [[ 1, "asc" ]],
 	"scrollX": true,    
-        "aoColumns": [
+        "columns": [
 	   {"orderable": "false"},
 	   null,
 	   null,

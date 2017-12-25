@@ -70,18 +70,18 @@ function loadDataTable() {
         "oLanguage": {
             "sLengthMenu": "view: _MENU_ "
         },
-        "iDisplayLength": 10,
+        "iDisplayLength": 15,
         "aaSorting": [[ 1, "asc" ]],
 	"scrollX": true,    
         "aoColumns": [
-	   {"ordering": "false"},
+	   {"orderable": "false"},
 	   null,
 	   null,
 	   null,
 	   null,
 	   null,
 	   null,
-	  {"ordering": "false"}	
+	  {"orderable": "false"}	
         ],
         // Fix thead to top of page when scrolling past it
         "initComplete": function(settings, json) {

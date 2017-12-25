@@ -68,9 +68,9 @@ function loadDataTable() {
     $('#searchable-table').dataTable({
         "bAutoWidth": true,
         "oLanguage": {
-            "sLengthMenu": "view: _MENU_ "
+            "sLengthMenu": "Show data: _MENU_ "
         },
-        "iDisplayLength": 15,
+        "iDisplayLength": 25,
         "aaSorting": [[ 1, "asc" ]],
 	"scrollX": true,    
         "aoColumns": [

@@ -74,14 +74,14 @@ function loadDataTable() {
         "aaSorting": [[ 1, "asc" ]],
 	"scrollX": true,    
         "columns": [
-	   {"orderable": "false"},
+	   {"ordering": "false"},
 	   null,
 	   null,
 	   null,
 	   null,
 	   null,
 	   null,
-	  {"orderable": "false"}	
+	  {"ordering": "false"}	
         ],
         // Fix thead to top of page when scrolling past it
         "initComplete": function(settings, json) {

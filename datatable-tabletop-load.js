@@ -75,7 +75,7 @@ function loadDataTable() {
 	"scrollX": true,    
         "aoColumns": [
 	   {
-                "sWidth": "18%"
+                "sWidth": "15%"
                 // "sType": "formatted-num"  
             },{
                 "sWidth": "10%"
@@ -93,7 +93,7 @@ function loadDataTable() {
                 "sWidth": "10%"
                 // "sType": "formatted-num" 
             },{
-                "sWidth": "14%",
+                "sWidth": "25%",
 		"ordering": "false"   
                 // "sType": "formatted-num" 
 		    

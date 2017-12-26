@@ -1,4 +1,4 @@
-particlesJS("intro-header", {
+particlesJS("particles-js", {
   "particles": {
     "number": {
       "value": 280,

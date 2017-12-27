@@ -66,6 +66,10 @@ jQuery.extend( jQuery.fn.dataTableExt.oSort, {
 function loadDataTable() {
     // Load Datatables after Tabletop is loaded
     $('#searchable-table').dataTable({
+        "paging":   false,
+        "ordering": false,
+        "info":     false,
+	"searchPane": true,
         "bAutoWidth": true,
         "oLanguage": {
             "sLengthMenu": "Show data: _MENU_ "
@@ -73,25 +77,21 @@ function loadDataTable() {
         "iDisplayLength": 25,
         "aaSorting": [[ 1, "asc" ]],
 	"scrollX": true,    
-        "aoColumns": [
-	   {"orderable": "false"},
-	   null,
-	   null,
-	   null,
-	   null,
-	   null,
-	   null,
-	  {"orderable": "false"}	
-        ],
+//        "aoColumns": [
+//	   {"orderable": "false"},
+//	   null,
+//	   null,
+//	   null,
+//	   null,
+//	   null,
+//	   null,
+//	  {"orderable": "false"}	
+//        ],
         // Fix thead to top of page when scrolling past it
         "initComplete": function(settings, json) {
             $('#searchable-table').show();
         }
-  //      "createdRow": function ( row, data, txt ) {
-  //          if ( data[6] === "Not Paying" ) {
-  //              $('td', row).eq(6).addClass('scam');
-  //          }
-  //      }	    
+	    
     });
 // Close loadDataTable
 };

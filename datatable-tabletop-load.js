@@ -66,9 +66,9 @@ jQuery.extend( jQuery.fn.dataTableExt.oSort, {
 function loadDataTable() {
     // Load Datatables after Tabletop is loaded
     $('#searchable-table').dataTable({
-        "paging":   false,
-        "ordering": false,
-        "info":     false,
+        "paging":   true,
+        "ordering": true,
+        "info":     true,
 	"searchPane": true,
         "bAutoWidth": true,
         "oLanguage": {

@@ -86,9 +86,7 @@ function loadDataTable() {
 	   null,
 	   {"orderable": false},
 	   {"orderable": false},
-	   {"orderable": false},
-	   {"orderable": false},
-	   {"orderable": false}	
+	   {"orderable": false}
         ],
         // Fix thead to top of page when scrolling past it
         "initComplete": function(settings, json) {

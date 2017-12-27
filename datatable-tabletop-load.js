@@ -75,7 +75,7 @@ function loadDataTable() {
             "sLengthMenu": "Show data: _MENU_ "
         },
         "iDisplayLength": 25,
-        "aaSorting": [[ 1, "asc" ]],
+        "aaSorting": [[ 0, "asc" ]],
 	"scrollX": true,    
         "aoColumns": [
 	   null,
@@ -84,6 +84,8 @@ function loadDataTable() {
 	   {"orderable": false},
 	   null,
 	   null,
+	   {"orderable": false},
+	   {"orderable": false},
 	   {"orderable": false},
 	   {"orderable": false},
 	   {"orderable": false}	

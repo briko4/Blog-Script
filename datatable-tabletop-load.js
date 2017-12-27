@@ -72,7 +72,7 @@ function loadDataTable() {
 	"searchPane": true,
         "bAutoWidth": true,
         "oLanguage": {
-            "sLengthMenu": "Show data: _MENU_ "
+            "sLengthMenu": "Per page: _MENU_ "
         },
         "iDisplayLength": 25,
         "aaSorting": [[ 0, "asc" ]],
@@ -83,7 +83,6 @@ function loadDataTable() {
 	   {"orderable": false},
 	   {"orderable": false},
 	   null,
-	   {"orderable": false},
 	   {"orderable": false},
 	   {"orderable": false},
 	   {"orderable": false},

@@ -17,6 +17,8 @@ const fetchData = function () {
       console.log(c);
       // debugger;
       let c_obj = {
+      rank: c.rank,
+      name: c.name,  
       symbol: c.symbol,
       price: c.price_usd,
       change24hour: c.percent_change_24h,
@@ -46,14 +48,12 @@ const fetchData = function () {
 
 
 const displayData = function(data) {
-
     // data = data.sort(compare).slice().reverse();
-
-
   _(data).each(function (c_obj) {
     row = [
       `<tr>`,
-      `<td>${c_obj.symbol}</td>`,
+      `<td>${c_obj.rank}</td>`,
+      `<td>${c_obj.name} (${c_obj.symbol})</td>`,
       `<td>${accounting.formatMoney(c_obj.price)}</td>`,
       `<td>${c_obj.change24hour}%</td>`,
       `<td>${accounting.formatMoney(c_obj.supply)}</td>`,
@@ -63,16 +63,11 @@ const displayData = function(data) {
     ]
     $('#data').append(row.join(''))
   })
-
 }
-
-
 
 $(document).ready(function() {
   console.log("document ready");
-
-  $('#data').text(`loading data...`)
-
+  $('#data').text('loading data...')
   fetchData()
 
 

@@ -135,21 +135,8 @@ const displayData = function(data) {
 
     data = data.sort(compare).slice().reverse();
 
-    let title = []
-	title.push(`<thead><tr>`)
-    title.push(`<th>Symbol</th>`)
-    title.push(`<th>Price</th>`)
-    title.push(`<th>24 Hour Change</th>`)
-    title.push(`<th>Supply</th>`)
-    title.push(`<th>Volume</th>`)
-    title.push(`<th>Market Cap</th>`)
-    title.push(`</tr></thead>`)
-
-    $('#data').html(title.join(''))
-
   _(data).each(function (c_obj) {
-    row = [
-      `<tbody>`,
+    tbody= [
 	  `<tr>`,
       `<td>${c_obj.symbol}</td>`,
       `<td>${accounting.formatMoney(c_obj.price)}</td>`,
@@ -157,10 +144,9 @@ const displayData = function(data) {
       `<td>${accounting.formatMoney(c_obj.supply)}</td>`,
       `<td>${accounting.formatMoney(c_obj.totalvolume24h)}</td>`,
       `<td>${accounting.formatMoney(c_obj.mkcap)}</td>`,
-      `</tr>`,
-	  `</tbody>
+      `</tr>
     ]
-    $('#data').append(row.join(''))
+    $('#data').append(tbody.join(''))
   })
 
 }

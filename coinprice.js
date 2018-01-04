@@ -23,8 +23,6 @@ const compare = function (a, b) {
 }
 
 
-
-
 const fetchCurrencies = function () {
   const baseURL = "https://min-api.cryptocompare.com/data/all/coinlist";
   const infoURL = "https://www.cryptocompare.com";
@@ -137,14 +135,14 @@ const displayData = function(data) {
 
   _(data).each(function (c_obj) {
     row = [
-	  `<tr>`,
-      `<td>${c_obj.symbol}</td>`,
-      `<td>${accounting.formatMoney(c_obj.price)}</td>`,
-      `<td>${c_obj.change24hour.toPrecision(3)}%</td>`,
-      `<td>${accounting.formatMoney(c_obj.supply)}</td>`,
-      `<td>${accounting.formatMoney(c_obj.totalvolume24h)}</td>`,
-      `<td>${accounting.formatMoney(c_obj.mkcap)}</td>`,
-      `</tr>'
+	  '<tr>',
+      '<td>${c_obj.symbol}</td>',
+      '<td>${accounting.formatMoney(c_obj.price)}</td>',
+      '<td>${c_obj.change24hour.toPrecision(3)}%</td>',
+      '<td>${accounting.formatMoney(c_obj.supply)}</td>',
+      '<td>${accounting.formatMoney(c_obj.totalvolume24h)}</td>',
+      '<td>${accounting.formatMoney(c_obj.mkcap)}</td>',
+      '</tr>'
     ]
     $('#data').find('tbody').append(row.join(''))
   })
@@ -156,7 +154,7 @@ const displayData = function(data) {
 $(document).ready(function() {
   console.log("document ready");
 
-  $('#data').text(`loading data...`)
+  $('#data').text('loading data...')
 
   fetchCurrencies()
 

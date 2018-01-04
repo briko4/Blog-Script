@@ -136,7 +136,6 @@ const displayData = function(data) {
     data = data.sort(compare).slice().reverse();
 
     let title = []
-    title.push(`<table cellspacing="0" class="table table-striped table-bordered" id="searchable-table" width="100%">`)
 	title.push(`<thead><tr>`)
     title.push(`<th>Symbol</th>`)
     title.push(`<th>Price</th>`)
@@ -145,19 +144,11 @@ const displayData = function(data) {
     title.push(`<th>Volume</th>`)
     title.push(`<th>Market Cap</th>`)
     title.push(`</tr></thead>`)
-	title.push(`<tfoot><tr>`)
-    title.push(`<th>Symbol</th>`)
-    title.push(`<th>Price</th>`)
-    title.push(`<th>24 Hour Change</th>`)
-    title.push(`<th>Supply</th>`)
-    title.push(`<th>Volume</th>`)
-    title.push(`<th>Market Cap</th>`)
-    title.push(`</tr></tfoot>`)
 
     $('#data').html(title.join(''))
 
   _(data).each(function (c_obj) {
-    row = [
+    tbody = [
       `<tbody>`,
 	  `<tr>`,
       `<td>${c_obj.symbol}</td>`,
@@ -167,10 +158,9 @@ const displayData = function(data) {
       `<td>${accounting.formatMoney(c_obj.totalvolume24h)}</td>`,
       `<td>${accounting.formatMoney(c_obj.mkcap)}</td>`,
       `</tr>`,
-	  `</tbody>`,
-	  `</table>`
+	  `</tbody>
     ]
-    $('#data').append(row.join(''))
+    $('#data').append(tbody.join(''))
   })
 
 }

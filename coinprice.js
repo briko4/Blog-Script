@@ -144,7 +144,7 @@ const displayData = function(data) {
       `<td>${accounting.formatMoney(c_obj.supply)}</td>`,
       `<td>${accounting.formatMoney(c_obj.totalvolume24h)}</td>`,
       `<td>${accounting.formatMoney(c_obj.mkcap)}</td>`,
-      `</tr>
+      `</tr>'
     ]
     $('#data tbody').append(row.join(''))
   })

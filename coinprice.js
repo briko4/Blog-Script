@@ -148,7 +148,7 @@ const displayData = function(data) {
     $('#data').html(title.join(''))
 
   _(data).each(function (c_obj) {
-    tbody = [
+    row = [
       `<tbody>`,
 	  `<tr>`,
       `<td>${c_obj.symbol}</td>`,
@@ -160,7 +160,7 @@ const displayData = function(data) {
       `</tr>`,
 	  `</tbody>
     ]
-    $('#data').append(tbody.join(''))
+    $('#data').append(row.join(''))
   })
 
 }

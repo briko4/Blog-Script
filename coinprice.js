@@ -7,7 +7,7 @@ const data = []
 
 const fetchData = function () {
 
-  const baseURL = "https://api.coinmarketcap.com/v1/ticker/?limit=100"
+  const baseURL = "https://api.coinmarketcap.com/v1/ticker/?limit=50"
 
 
   $.getJSON(baseURL).done(function (info) {

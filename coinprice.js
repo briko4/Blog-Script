@@ -136,7 +136,7 @@ const displayData = function(data) {
     data = data.sort(compare).slice().reverse();
 
   _(data).each(function (c_obj) {
-    tbody= [
+    row = [
 	  `<tr>`,
       `<td>${c_obj.symbol}</td>`,
       `<td>${accounting.formatMoney(c_obj.price)}</td>`,
@@ -146,7 +146,7 @@ const displayData = function(data) {
       `<td>${accounting.formatMoney(c_obj.mkcap)}</td>`,
       `</tr>
     ]
-    $('#data').append(tbody.join(''))
+    $('#data').append(row.join(''))
   })
 
 }
